@@ -1,0 +1,13 @@
+$textoResaltado:(
+    inicio:1rem,
+    destacado:2rem,
+    final:1.5rem,
+);
+
+@each $frase, $tamanio in $textoResaltado {
+    .#{$frase}{
+        font-size: $tamanio;
+        font-weight: bold;
+        font-style: italic;
+    }
+}

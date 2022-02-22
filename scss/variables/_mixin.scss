@@ -1,0 +1,9 @@
+@mixin estiloTitulos($margenSup, $margenizq, $margenInf, $alineacion, $tamanio, $espacioLetra) {
+    margin-top: $margenSup;
+    margin-left: $margenizq;
+    margin-bottom: $margenInf;
+    text-align: $alineacion;
+    font-size: $tamanio;
+    letter-spacing: $espacioLetra;
+
+}

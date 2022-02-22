@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import './variables/colores';
+@import './variables/fuentes';
+@import './variables/extend';
+@import './variables/mixin';
+@import './variables/maps';
+@import './utilidades/header';
+@import './secciones/index';
+@import './secciones/contacto';
+@import './secciones/nosotros';
+@import './utilidades/footer';
+@import './utilidades/mediaqueries';
+
+ 

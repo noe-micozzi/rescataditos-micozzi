@@ -1,0 +1,63 @@
+header {
+    background-color: $colorfondoheader;
+
+    .logo {
+        padding: 5px;
+    }
+
+    .navbar-brand {
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .navbar-toggler {
+        border-color: black;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    .nav-item {
+        .nav-link {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: $colorBlanco;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: 0.5s;
+            position: relative;
+
+            &:hover {
+                color: $colorgris;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                height: 3px;
+                background-color: $colorgris;
+                transform: scaleX(0);
+                transform-origin: right;
+                transition: transform 0.5s;
+            }
+
+            &:hover::after {
+                transform: scaleX(1);
+                transform-origin: left;
+            }
+
+            &:active {
+                font-weight: bold;
+            }
+
+            &:visited {
+                color: $colorBlanco;
+            }
+        }
+    }
+}
